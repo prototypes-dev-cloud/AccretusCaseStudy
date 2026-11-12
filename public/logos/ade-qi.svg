@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <!-- Background -->
+  <rect width="320" height="80" fill="#0f1f35" rx="8"/>
+  <!-- Gold accent bar -->
+  <rect x="0" y="0" width="6" height="80" fill="#f59e0b" rx="3"/>
+  <!-- Icon shield -->
+  <g transform="translate(22, 16)">
+    <path d="M24 2L4 10v14c0 10.5 8.5 20.3 20 23 11.5-2.7 20-12.5 20-23V10L24 2z" fill="#f59e0b" opacity="0.15"/>
+    <path d="M24 2L4 10v14c0 10.5 8.5 20.3 20 23 11.5-2.7 20-12.5 20-23V10L24 2z" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <text x="24" y="31" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#f59e0b" text-anchor="middle">ADE</text>
+  </g>
+  <!-- Name -->
+  <text x="80" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Atlanta Deferred Exchange</text>
+  <!-- Tagline -->
+  <text x="80" y="50" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">Qualified Intermediary · IRC §1031 Exchange Services</text>
+  <!-- Bottom rule -->
+  <line x1="80" y1="62" x2="308" y2="62" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <text x="80" y="74" font-family="Arial, sans-serif" font-size="9" fill="#64748b">1200 Peachtree St NE, Suite 800, Atlanta, GA 30309</text>
+</svg>

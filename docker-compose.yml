@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  ade-partner-hub:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ade-partner-hub
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - DB_PATH=/data
+    volumes:
+      # SQLite DB persists across container restarts
+      - ade-db:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  ade-partner-hub-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: ade-partner-hub-dev
+    ports:
+      - "3001:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+      - ade-db-dev:/data
+    environment:
+      - NODE_ENV=development
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - DB_PATH=/data
+    profiles:
+      - dev
+
+volumes:
+  ade-db:
+    driver: local
+  ade-db-dev:
+    driver: local

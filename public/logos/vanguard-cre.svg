@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <!-- Background -->
+  <rect width="280" height="80" fill="#ffffff" rx="8"/>
+  <rect width="280" height="80" fill="none" stroke="#e2e8f0" stroke-width="1.5" rx="8"/>
+  <!-- Logo mark: building/tower -->
+  <g transform="translate(16, 8)">
+    <rect width="52" height="64" fill="#065f46" rx="6"/>
+    <!-- Building icon -->
+    <rect x="12" y="18" width="28" height="34" fill="none" stroke="#6ee7b7" stroke-width="1.5"/>
+    <rect x="16" y="22" width="6" height="6" fill="#6ee7b7" opacity="0.6"/>
+    <rect x="26" y="22" width="6" height="6" fill="#6ee7b7" opacity="0.6"/>
+    <rect x="16" y="32" width="6" height="6" fill="#6ee7b7" opacity="0.6"/>
+    <rect x="26" y="32" width="6" height="6" fill="#6ee7b7" opacity="0.6"/>
+    <rect x="20" y="42" width="12" height="10" fill="#6ee7b7" opacity="0.8"/>
+    <!-- Roof triangle -->
+    <polygon points="12,18 26,8 40,18" fill="#6ee7b7" opacity="0.4"/>
+    <text x="26" y="62" font-family="Arial, sans-serif" font-size="7" font-weight="600" fill="#6ee7b7" text-anchor="middle">CRE</text>
+  </g>
+  <!-- Name -->
+  <text x="82" y="27" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#065f46">Vanguard Commercial Brokerage</text>
+  <!-- Type badge -->
+  <rect x="82" y="34" width="82" height="16" fill="#d1fae5" rx="4"/>
+  <text x="123" y="46" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#047857" text-anchor="middle">CRE Broker</text>
+  <!-- Contact -->
+  <text x="82" y="66" font-family="Arial, sans-serif" font-size="10" fill="#64748b">mwebb@vanguardcre.com · (404) 555-0403</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <!-- Background -->
+  <rect width="280" height="80" fill="#ffffff" rx="8"/>
+  <rect width="280" height="80" fill="none" stroke="#e2e8f0" stroke-width="1.5" rx="8"/>
+  <!-- Logo mark: stylized A -->
+  <g transform="translate(16, 10)">
+    <rect width="52" height="60" fill="#0f4c81" rx="6"/>
+    <text x="26" y="38" font-family="Arial, sans-serif" font-size="26" font-weight="900" fill="#ffffff" text-anchor="middle">A</text>
+    <text x="26" y="52" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#93c5fd" text-anchor="middle">CPA</text>
+  </g>
+  <!-- Name -->
+  <text x="82" y="28" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#0f4c81">Apex CPA Group</text>
+  <!-- Type badge -->
+  <rect x="82" y="35" width="80" height="16" fill="#dbeafe" rx="4"/>
+  <text x="122" y="47" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1d4ed8" text-anchor="middle">Certified Public Accountants</text>
+  <!-- Contact -->
+  <text x="82" y="66" font-family="Arial, sans-serif" font-size="10" fill="#64748b">smitchell@apexcpagroup.com · (404) 555-0201</text>
+</svg>

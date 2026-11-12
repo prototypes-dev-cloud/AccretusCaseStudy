@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400;
+  }
+}
+
+@layer utilities {
+  .bg-navy-600 { background-color: #1e3a5f; }
+  .bg-navy-700 { background-color: #1a3254; }
+  .bg-navy-800 { background-color: #152a47; }
+  .bg-navy-900 { background-color: #0f1f35; }
+  .bg-navy-100 { background-color: #e0e9ff; }
+  .text-navy-200 { color: #c7d6fe; }
+  .text-navy-300 { color: #a5b8fc; }
+  .text-navy-400 { color: #8290f8; }
+  .text-navy-600 { color: #1e3a5f; }
+  .text-navy-700 { color: #1a3254; }
+  .border-navy-600 { border-color: #1e3a5f; }
+  .border-navy-700 { border-color: #1a3254; }
+  .focus\:ring-navy-600:focus { --tw-ring-color: #1e3a5f; }
+  .hover\:bg-navy-700:hover { background-color: #1a3254; }
+  .hover\:bg-navy-800:hover { background-color: #152a47; }
+  .bg-gold-500 { background-color: #f59e0b; }
+  .text-gold-400 { color: #fbbf24; }
+}
